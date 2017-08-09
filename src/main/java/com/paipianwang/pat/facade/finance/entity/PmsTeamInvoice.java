@@ -9,47 +9,45 @@ public class PmsTeamInvoice extends BaseEntity {
 
 	private static final long serialVersionUID = -6519482800672773697L;
 
-	private long[] ids;//id集合
-	
+	private long[] ids;// id集合
+
 	private long invoiceId = 0l;
-	
+
 	private String invoiceCode = null; // 发票编号
-	
-	private int invoiceType ; // 1.增值税专用发票 2.增值税普通发票
-	
-	private String invoiceContent;//发票内容
-	
-	private String invoiceTotal;//价税合计
-	
-	private String invoiceStampTime = null; //开票日期
-	
+
+	private int invoiceType; // 1.增值税专用发票 2.增值税普通发票
+
+	private String invoiceContent;// 发票内容
+
+	private String invoiceTotal;// 价税合计
+
+	private String invoiceStampTime = null; // 开票日期
+
 	private String invoiceTeamTime = null; // 提供发票日期
-	
+
 	private float invoiceRadio = 0.0f; // 税率
-	
+
 	private String invoiceNotice = null; // 备注
-	
+
 	private Long invoiceProjectId = 0l; // 项目ID
-	
+
 	private Long invoiceEmployeeId = 0l; // 领取人
-	
+
 	private Long invoiceUserId = 0l; // 客户ID
-	
+
 	private Long invoiceTeamId = 0l; // 供应商ID
-	
+
 	private Integer invoiceStatus = 0; // 发票状态
-	
+
 	private String reason = null; // 未通过原因
-	
-	private String projectName = null;//项目名
-	
-	private String teamName = null;//供应商名称
-	
-	private String userName = null;//用户名
-	
-	private String invoiceEmployeeName = null;//用户名
-	
-	
+
+	private String projectName = null;// 项目名
+
+	private String teamName = null;// 供应商名称
+
+	private String userName = null;// 用户名
+
+	private String invoiceEmployeeName = null;// 用户名
 
 	public long[] getIds() {
 		return ids;
@@ -74,6 +72,7 @@ public class PmsTeamInvoice extends BaseEntity {
 	public void setTeamName(String teamName) {
 		this.teamName = teamName;
 	}
+
 	public String getInvoiceTeamTime() {
 		return invoiceTeamTime;
 	}
@@ -209,5 +208,5 @@ public class PmsTeamInvoice extends BaseEntity {
 	public void setInvoiceStatus(Integer invoiceStatus) {
 		this.invoiceStatus = invoiceStatus;
 	}
-	
+
 }

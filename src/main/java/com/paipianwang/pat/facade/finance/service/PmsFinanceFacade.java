@@ -16,4 +16,11 @@ public interface PmsFinanceFacade {
 
 	public long deleteByArray(final long[] ids);
 
+	/**
+	 * 根据projectId判断是否存在
+	 * @param projectId
+	 * @return
+	 */
+	public boolean isExistByProjectId(final String projectId);
+	
 }
