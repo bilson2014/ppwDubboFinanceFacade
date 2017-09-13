@@ -16,6 +16,8 @@ public interface PmsFinanceFacade {
 	public long update(final PmsDealLog dealLog);
 
 	public long deleteByArray(final long[] ids);
+	
+	public List<PmsDealLog> listByProjectId(String projectId);
 
 	/**
 	 * 根据projectId判断是否存在
