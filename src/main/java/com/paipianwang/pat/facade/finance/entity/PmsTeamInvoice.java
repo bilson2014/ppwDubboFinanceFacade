@@ -29,7 +29,7 @@ public class PmsTeamInvoice extends BaseEntity {
 
 	private String invoiceNotice = null; // 备注
 
-	private Long invoiceProjectId = 0l; // 项目ID
+	private String invoiceProjectId = null; // 项目ID
 
 	private Long invoiceEmployeeId = 0l; // 领取人
 
@@ -177,11 +177,11 @@ public class PmsTeamInvoice extends BaseEntity {
 		this.invoiceUserId = invoiceUserId;
 	}
 
-	public Long getInvoiceProjectId() {
+	public String getInvoiceProjectId() {
 		return invoiceProjectId;
 	}
 
-	public void setInvoiceProjectId(Long invoiceProjectId) {
+	public void setInvoiceProjectId(String invoiceProjectId) {
 		this.invoiceProjectId = invoiceProjectId;
 	}
 
